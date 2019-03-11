@@ -1,12 +1,17 @@
 package application;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 public class SampleController {
 	// メインパネルの表示
@@ -15,9 +20,10 @@ public class SampleController {
 	// パーツの表示
 	@FXML Label Title;
 	@FXML GridPane TeamName;
-		@FXML Label TeamName1;
-		@FXML Label TeamName2;
 	@FXML GridPane Points;
+		@FXML Label PlayerName;
+		@FXML Label TeamTag;
+		@FXML Label PlayerPoints;
 		@FXML TextField Player1;
 		@FXML TextField Player2;
 		@FXML TextField Player3;
@@ -42,14 +48,59 @@ public class SampleController {
 		@FXML TextField Tag10;
 		@FXML TextField Tag11;
 		@FXML TextField Tag12;
+		@FXML TextField Point1;
+		@FXML TextField Point2;
+		@FXML TextField Point3;
+		@FXML TextField Point4;
+		@FXML TextField Point5;
+		@FXML TextField Point6;
+		@FXML TextField Point7;
+		@FXML TextField Point8;
+		@FXML TextField Point9;
+		@FXML TextField Point10;
+		@FXML TextField Point11;
+		@FXML TextField Point12;
 	@FXML GridPane Result;
 	@FXML Button CalcBtn;
 	
+	/*public static int[] point = new int[12];
+	public static String[] name = new String[12];
+	public static String[] tag = new String[12];
+	public int[] tagNum = new int[12];
+	String str;*/
 	
 	
 	@FXML
-	public void onClickCalcBtn(ActionEvent e) {
-		Title.setText("Hello JavaFx!");
+	void onClickCalcBtn(ActionEvent event) {
+		System.out.println("aaa");
+		try {
+			System.out.println("bbb");
+			showSecondWindow();
+		} catch (Exception ex) {
+			System.out.println(ex.getMessage());
+		}
 	}
+
+	void showSecondWindow() throws IOException {
+		
+		//getTexts(Player1,Tag1,Point1,1);
+		System.out.println("ccc");
+
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("SecondView.fxml"));
+		BorderPane root = (BorderPane) loader.load();
+		Scene scene = new Scene(root);
+		Stage stage = new Stage();
+		stage.setScene(scene);
+		stage.showAndWait();
+		System.out.println("ddd");
+		//SecondController.output();
+	}
+	
+	/*void getTexts(TextField n, TextField t, TextField p, int i) {
+		i -= 1;
+		name[i] = n.getText();
+		tag[i] = t.getText();
+		point[i] = Integer.parseInt(p.getText());
+	}*/
 	
 }

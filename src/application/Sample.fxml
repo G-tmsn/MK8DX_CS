@@ -24,11 +24,12 @@
       </GridPane>
    </right>
    <center>
-      <GridPane fx:id="Points" prefHeight="420.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+      <GridPane fx:id="Points" prefHeight="428.0" prefWidth="363.0" BorderPane.alignment="CENTER">
         <columnConstraints>
-          <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="130.0" />
-            <ColumnConstraints hgrow="SOMETIMES" maxWidth="96.0" minWidth="10.0" prefWidth="70.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="133.0" minWidth="10.0" prefWidth="133.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="131.0" minWidth="10.0" prefWidth="76.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="46.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="114.0" minWidth="10.0" prefWidth="114.0" />
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -58,20 +59,33 @@
             <TextField fx:id="Player11" GridPane.rowIndex="11" />
             <TextField fx:id="Player10" GridPane.rowIndex="10" />
             <TextField fx:id="Player9" GridPane.rowIndex="9" />
-            <TextField fx:id="Tag1" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <TextField fx:id="Tag12" GridPane.columnIndex="2" GridPane.rowIndex="12" />
-            <TextField fx:id="Tag11" GridPane.columnIndex="2" GridPane.rowIndex="11" />
-            <TextField fx:id="Tag10" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-            <TextField fx:id="Tag9" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <TextField fx:id="Tag8" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <TextField fx:id="Tag7" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <TextField fx:id="Tag6" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <TextField fx:id="Tag5" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <TextField fx:id="Tag4" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <TextField fx:id="Tag3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <TextField fx:id="Tag2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Label fx:id="TeamName1" text="Player Name" />
-            <Label fx:id="TeamName2" text="Team Tag" GridPane.columnIndex="2" />
+            <TextField fx:id="Tag1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="Tag12" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <TextField fx:id="Tag11" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <TextField fx:id="Tag10" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="Tag9" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <TextField fx:id="Tag8" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="Tag7" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="Tag6" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="Tag5" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="Tag4" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="Tag3" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="Tag2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="PlayerName" text="Player Name" />
+            <Label fx:id="TeamTag" text="Team Tag" GridPane.columnIndex="1" />
+            <Label fx:id="PlayerPoints" text="Point" GridPane.columnIndex="3" />
+            <TextField fx:id="Point12" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+            <TextField fx:id="Point11" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+            <TextField fx:id="Point10" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+            <TextField fx:id="Point9" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <TextField fx:id="Point8" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <TextField fx:id="Point7" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <TextField fx:id="Point6" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <TextField fx:id="Point5" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <TextField fx:id="Point4" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <TextField fx:id="Point3" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <TextField fx:id="Point2" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="Point1" GridPane.columnIndex="3" GridPane.rowIndex="1" />
          </children>
       </GridPane>
    </center>
